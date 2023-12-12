@@ -33,14 +33,9 @@ st.sidebar.markdown(
 
 
 # add the images and center it from images/logo_v3.png and center it
-st.markdown(
-    """
-    <div style="text-align:center">
-    <img src="/workspaces/loilibre_ui/loilibre_ui/images/logo_v3.png" alt="LoiLibre logo" width="200"/>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    st.image("loilibre_ui/images/logo_v3.png", width=300)
 
 st.markdown(
     """
