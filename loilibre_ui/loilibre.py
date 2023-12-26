@@ -17,6 +17,8 @@ import streamlit as st
 # - the metrics
 # - the description of the method
 
+st.sidebar.image("loilibre_ui/images/logo_v3.png", width=300)
+
 st.sidebar.markdown(
     """
     LoiLibre est un chatbot qui génère des textes juridiques à partir d'une base de données de codes juridiques.
@@ -31,11 +33,6 @@ st.sidebar.markdown(
 
     """)
 
-
-# add the images and center it from images/logo_v3.png and center it
-left_co, cent_co,last_co = st.columns(3)
-with cent_co:
-    st.image("loilibre_ui/images/logo_v3.png", width=300)
 
 st.markdown(
     """
