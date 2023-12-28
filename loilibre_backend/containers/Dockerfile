@@ -13,10 +13,4 @@ FROM python:3.8
 # uvicorn to run the server
 # transformers to use the RAG model
 # torch to use the RAG model
-RUN pip install fastapi uvicorn transformers torch
-
-# we will copy the backend folder into the container
-COPY ./backend /backend
-
-# we will set the working directory to the backend folder
-WORKDIR /backend
+RUN pip install fastapi uvicorn transformers torch chromadb pandas pyarrow sentence_transformers
