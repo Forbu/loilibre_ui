@@ -38,6 +38,7 @@ def loilibre_rag(message: str):
     document = query_vector_db(collection, message=message, model=model)
 
     # using main model to compute the response
+    response = "TODO response with an open API like chatgpt or mixtral"
     
     return {"message": message, "document": document, "response": response}
 
